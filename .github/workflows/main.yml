@@ -8,6 +8,7 @@ on:
       - main
 
 jobs:
+
   CI:
     # Define the runner used in the workflow
     runs-on: ubuntu-latest
@@ -60,6 +61,7 @@ jobs:
         with:
           name: api
           path: api.zip
+
 
   CD:
     runs-on: ubuntu-latest
