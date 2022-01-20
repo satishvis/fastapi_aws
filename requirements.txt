@@ -8,6 +8,7 @@ fastapi==0.72.0
 h11==0.13.0
 idna==3.3
 iniconfig==1.1.1
+mangum==0.11.0
 packaging==21.3
 pluggy==1.0.0
 py==1.11.0
@@ -21,5 +22,3 @@ toml==0.10.2
 typing_extensions==4.0.1
 urllib3==1.26.8
 uvicorn==0.17.0
-mangum==0.12.3
-typing_extensions==4.0.1
