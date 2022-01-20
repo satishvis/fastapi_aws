@@ -35,9 +35,9 @@ jobs:
         with:
           path: venv # What we cache: the virtual env
           # The cache key depends on requirements.txt
-        key: ${{ runner.os  }}-venv-${{ hashFiles('**/requirements*.txt') }}
-        restore-keys: /
-          ${{ runner.os }}-venv-
+          key: ${{ runner.os  }}-venv-${{ hashFiles('**/requirements*.txt') }}
+          restore-keys: /
+            ${{ runner.os }}-venv-
 
       # Step-4 Build a Virtualenv, but only if it does not exist already
       - name: Activate Virtualenv
