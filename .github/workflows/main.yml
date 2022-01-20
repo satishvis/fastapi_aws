@@ -42,7 +42,7 @@ jobs:
       # Step-4 Build a Virtualenv, but only if it does not exist already
       - name: Activate Virtualenv
         run: python -m venv venv && source venv/bin/activate && pip3 install -r requirements.txt
-        # if: steps.cache-venv.outputs.cache-hit != 'true'
+        if: steps.cache-venv.outputs.cache-hit != 'true'
 
       - name: Run Tests
         # Note that we have to activate the virtualenv every time
